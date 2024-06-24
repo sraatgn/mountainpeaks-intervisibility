@@ -1,0 +1,59 @@
+1. LOAD LAYERS
+	Raster layers
+	- DEM: data/tinitaly_dem.tif 
+	Vector layers
+	- mountain peaks: data/peaks_clean.geojson
+	- panoramic trails: qgis_analysis/qgis_layers/panoramic_trails.geojson
+	- viewpoints 763: qgis_analysis/qgis_layers/viewpoints_763.geojson
+	- viewpoints SSP: qgis_analysis/qgis_layers/viewpoints_SSP.geojson
+
+	All data is already in the same CRS (EPGS:32632 WGS 84 / UTM zone 32N)
+
+2. INTERVISIBILITY ANALYSIS (using Visibility Analyis plug-in)
+
+	Several intervisibility networks have been produced, using the same procedure:
+
+	2.1 CREATE VIEWPOINTS (Processing Toolbox > Visibility Analysis > Create viewpoints)
+		Both observer and targets need to be Viewpoints. Created from their respective layers.
+		(e.g. peaks_clean -> target_peaks; viewpoints_SSP -> observer_763; etc.)
+
+		Shared parameters:
+			- radius of analysis [m] : 20000
+			- observer height [m] : 1,70
+
+	2.2 CREATE INTERVISIBILITY NETWORK (Processing Toolbox > Visibility Analysis > Intervisibility Network)
+			- save negative links (no)
+			- take in account Earth curvature (no)
+
+	Output layers saved in qgis_analysis/results.
+
+	COMBINATIONS (obs-trgt)
+	- (Observer_viewpoints763 - Target_peaks)
+	- (Observer_viewpointsSSP - Target_peaks)
+	- (Observer_pietra - Target_peaks)
+	- (Observer_pietra - Target_peaks) + (Observer_viewpointsSSP(selected: id=3) - Target_peaks) 
+		- obtained by Processing Toolbox > Vector Overlay > Union 
+	- (Target_peaks - Target_peaks)
+
+3. BINARY VIEWSHED for panoramic viewpoints
+	Perfomed for 
+		- viewpoint ID=2 (SSP)
+		- viewpoint ID=3 (763)
+
+	Processing Toolbox > Visibility Analysis > Viewshed
+	
+4. PEAKS VISIBLE FROM BOTH trails
+	4.1 First intersect (Processing Toolbox > Vector Overlay > Intersect) the peaks layer with the (viewpoints on 763 - peaks) network 
+		Output: intermediate layer
+
+	4.2 Then intersect the intermediate layer with the (viewpoints on SSP - peaks) network.
+		Output: peaks (points) visible from both trails (saved in qgis_analysis/results/intersec_SSP763).
+	
+
+
+
+
+	
+
+
+	

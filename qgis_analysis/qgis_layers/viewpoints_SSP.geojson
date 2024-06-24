@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "GmlID": "Punto_panoramico_a_360_gradi.4118", "OBJECTID": 4118, "ID_POI": "EB331637-CB95-4301-9457-3F39152BC928", "DESCRIZIONE": "Punto panoramico a 360°", "layer": "Punto_panoramico_a_360_gradi", "index_right": 0 }, "geometry": { "type": "Point", "coordinates": [ 618309.730492235976271, 4897733.102152717299759 ] } },
+{ "type": "Feature", "properties": { "GmlID": "Punto_panoramico_orientato_a_Nord.4119", "OBJECTID": 4119, "ID_POI": "31CEE6FA-7738-440B-A7B6-6131CB58A418", "DESCRIZIONE": "Punto panoramico orientato a Nord", "layer": "Punto_panoramico_orientato_a_Nord", "index_right": 0 }, "geometry": { "type": "Point", "coordinates": [ 618054.207308291690424, 4897778.720181827433407 ] } },
+{ "type": "Feature", "properties": { "GmlID": "Punto_panoramico_orientato_a_Nord.2648", "OBJECTID": 2648, "ID_POI": "C5B52932-7800-4205-910A-52462CCD371C", "DESCRIZIONE": "Punto panoramico orientato a Nord", "layer": "Punto_panoramico_orientato_a_Nord", "index_right": 0 }, "geometry": { "type": "Point", "coordinates": [ 608970.068308988120407, 4904792.366801431402564 ] } },
+{ "type": "Feature", "properties": { "GmlID": "Punto_panoramico_orientato_a_Ovest.2961", "OBJECTID": 2961, "ID_POI": "20A45971-342B-4385-90B5-973E53F9F33F", "DESCRIZIONE": "Punto panoramico orientato a Ovest", "layer": "Punto_panoramico_orientato_a_Ovest", "index_right": 0 }, "geometry": { "type": "Point", "coordinates": [ 612469.108738919952884, 4919881.525030401535332 ] } },
+{ "type": "Feature", "properties": { "GmlID": "Punto_panoramico_orientato_a_Sud.4827", "OBJECTID": 4827, "ID_POI": "0A0B5190-AFE6-48F5-8F01-574949CC8646", "DESCRIZIONE": "Punto panoramico orientato a Sud", "layer": "Punto_panoramico_orientato_a_Sud", "index_right": 0 }, "geometry": { "type": "Point", "coordinates": [ 622065.790174584602937, 4922867.266716059297323 ] } },
+{ "type": "Feature", "properties": { "GmlID": "Punto_panoramico_orientato_a_Sud.4825", "OBJECTID": 4825, "ID_POI": "9AF05FEC-D681-4696-9791-790AF9F2AD76", "DESCRIZIONE": "Punto panoramico orientato a Sud", "layer": "Punto_panoramico_orientato_a_Sud", "index_right": 0 }, "geometry": { "type": "Point", "coordinates": [ 622115.186535274377093, 4922912.449898391962051 ] } }
+]
+}

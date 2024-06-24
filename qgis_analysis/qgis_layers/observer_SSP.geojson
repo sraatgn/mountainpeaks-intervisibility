@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "observer_SSP",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": "0", "observ_hgt": 1.7, "radius": 20000.0 }, "geometry": { "type": "Point", "coordinates": [ 618309.730492235976271, 4897733.102152717299759 ] } },
+{ "type": "Feature", "properties": { "ID": "1", "observ_hgt": 1.7, "radius": 20000.0 }, "geometry": { "type": "Point", "coordinates": [ 618054.207308291690424, 4897778.720181827433407 ] } },
+{ "type": "Feature", "properties": { "ID": "2", "observ_hgt": 1.7, "radius": 20000.0 }, "geometry": { "type": "Point", "coordinates": [ 608970.068308988120407, 4904792.366801431402564 ] } },
+{ "type": "Feature", "properties": { "ID": "3", "observ_hgt": 1.7, "radius": 20000.0 }, "geometry": { "type": "Point", "coordinates": [ 612469.108738919952884, 4919881.525030401535332 ] } },
+{ "type": "Feature", "properties": { "ID": "4", "observ_hgt": 1.7, "radius": 20000.0 }, "geometry": { "type": "Point", "coordinates": [ 622065.790174584602937, 4922867.266716059297323 ] } },
+{ "type": "Feature", "properties": { "ID": "5", "observ_hgt": 1.7, "radius": 20000.0 }, "geometry": { "type": "Point", "coordinates": [ 622115.186535274377093, 4922912.449898391962051 ] } }
+]
+}

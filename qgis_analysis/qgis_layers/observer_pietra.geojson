@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "observer_pietra",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": "Pietra Di Bismantova", "observ_hgt": 1.7, "radius": 20000.0 }, "geometry": { "type": "Point", "coordinates": [ 612571.642498656059615, 4919623.76984334923327 ] } }
+]
+}

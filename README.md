@@ -1,5 +1,3 @@
-[TOC]
-
 # Hiking in Appennino Tosco-Emiliano: Elevation & Intervisibility Analysis
 
 This repository contains the code and data used to analyze the area surrounding Appennino Tosco-Emiliano National Park, focusing on elevation and intervisibility of mountain peaks and hiking trails within this region.
@@ -39,6 +37,7 @@ It is possible to analyze a different area by adjusting the bounding box used (`
 - `trail_analysis.ipynb`: notebook used for hiking trails and viewpoints download, preprocessing and analysis.
 
 ## Example Results
+An example of the result: network of visible peaks from Pietra di Bismantova
 ![An example of the result: network of visible peaks from Pietra di Bismantova](repoimg.png)
 
 ## Authors

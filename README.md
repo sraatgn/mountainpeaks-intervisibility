@@ -10,22 +10,21 @@ git clone https://github.com/sraatgn/mountainpeaks-intervisibility.git
 ```
 2. In that directory (`cd <dir/path>`), create a virtual environment:
 ``` 
-python -m venv <envname>
+python3.10 -m venv geoenv
 ```
 3. Activate environment:
 ```
 # On Windows
-<envname>\Scripts\activate
+geoenv\Scripts\activate
 # On macOS/Linux
-source <envname>/bin/activate
+source geoenv/bin/activate
 ```
 4. Install required packages:
 ```
 pip install -r requirements.txt
 ```
 Large files (DEM and QGIS result layers) are not included, but can be retrieved by following the analysis workflow. 
-The other data (geoJSON files) for Appennino Tosco-Emiliano is already available in the `data/` and `qgis_layers` directory. 
-It is possible to analyze a different area by adjusting the bounding box used (`bbox_geom`) to download data for a different region.
+The other data (geoJSON files) for Appennino Tosco-Emiliano is already available in the `data/` and `qgis_layers` directory. It can also be downloaded again by executing the code in the notebooks. 
 
 ## Contents
 - `data/`: downloaded datasets.
@@ -39,6 +38,9 @@ It is possible to analyze a different area by adjusting the bounding box used (`
 ## Example Results
 An example of the result: network of visible peaks from Pietra di Bismantova
 ![An example of the result: network of visible peaks from Pietra di Bismantova](repoimg.png)
+
+### Note: analyze a different area
+It is possible to analyze a different area by adjusting the bounding box used (`bbox_geom`) to download data for a different region. However, this is possible only for the DEM and mountain peaks analysis (`scripts/dem_and_peaks.ipynb` and QGIS), because the trail data used in `scripts/trail_analysis.ipynb` is available for the Emilia-Romagna region only. To perform the complete analysis by integrating the trails and viewpoint data for a different area of interest, an alternative trail data source may be used. 
 
 ## Authors
 - Sara Tegoni [@sraatgn](https://github.com/sraatgn)

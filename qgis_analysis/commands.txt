@@ -1,3 +1,8 @@
+
+QGIS 3.36 Maidenhead
+
+Result layers can be reproduced by using the following commands. DEM data needs to be downloaded from dem_and_peaks.ipynb first.
+
 1. LOAD LAYERS
 	Raster layers
 	- DEM: data/tinitaly_dem.tif 
@@ -9,7 +14,7 @@
 
 	All data is already in the same CRS (EPGS:32632 WGS 84 / UTM zone 32N)
 
-2. INTERVISIBILITY ANALYSIS (using Visibility Analyis plug-in)
+2. INTERVISIBILITY ANALYSIS (using Visibility Analysis plug-in)
 
 	Several intervisibility networks have been produced, using the same procedure:
 

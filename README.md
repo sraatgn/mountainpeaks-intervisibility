@@ -32,8 +32,9 @@ The other data (geoJSON files) for Appennino Tosco-Emiliano is already available
     - `qgis_layers`: loaded layers for intervisibility analysis. 
 	- `commands.txt`: commands to replicate analysis.
 	- `visibility_analysis.qgz`: QGIS project.
-- `dem_and_peaks.ipynb`: notebook used for DEM and mountain peaks download, preprocessing and analysis.
-- `trail_analysis.ipynb`: notebook used for hiking trails and viewpoints download, preprocessing and analysis.
+- `scripts/`
+	- `dem_and_peaks.ipynb`: notebook used for DEM and mountain peaks download, preprocessing and analysis.
+	- `trail_analysis.ipynb`: notebook used for hiking trails and viewpoints download, preprocessing and analysis.
 
 ## Example Results
 An example of the result: network of visible peaks from Pietra di Bismantova

@@ -1,6 +1,9 @@
 geoenv/
 .vscode/
 report/
+!report/repoimg.png
+!report/repoimg2.png
+!report/main.pdf
 qgis_analysis/results/
 
 data/tinitaly_dem.tif
